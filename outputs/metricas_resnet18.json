@@ -1,0 +1,14 @@
+{
+  "modelo": "ResNet18 (transfer learning)",
+  "test_accuracy": 0.9985,
+  "mejor_val_accuracy": 1.0,
+  "mejor_epoch": 6,
+  "epochs": 7,
+  "parametros": 11179590,
+  "tamano_mb": 44.8,
+  "tiempo_entrenamiento_s": 86.6,
+  "inferencia_ms_gpu": 2.74,
+  "inferencia_ms_cpu": 12.94,
+  "cnn_inferencia_ms_gpu": 0.63,
+  "cnn_inferencia_ms_cpu": 2.63
+}
