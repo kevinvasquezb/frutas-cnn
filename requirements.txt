@@ -1,0 +1,12 @@
+numpy
+matplotlib
+seaborn
+scikit-learn
+pillow
+jupyter
+ipykernel
+tqdm
+onnx
+onnxscript
+onnxruntime
+gradio

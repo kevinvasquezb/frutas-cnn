@@ -1,0 +1,10 @@
+{
+  "modelo": "CNN propia (Net)",
+  "test_accuracy": 0.9907,
+  "mejor_val_accuracy": 0.9933,
+  "mejor_epoch": 20,
+  "epochs": 20,
+  "parametros": 16875526,
+  "tamano_mb": 67.5,
+  "tiempo_entrenamiento_s": 180.6
+}

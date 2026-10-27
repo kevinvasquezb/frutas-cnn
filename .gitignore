@@ -1,0 +1,10 @@
+data/
+referencia/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+models/*.pth
+models/*.onnx
+*.egg-info/
+.DS_Store
