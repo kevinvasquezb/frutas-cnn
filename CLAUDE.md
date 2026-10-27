@@ -235,6 +235,7 @@ Secciones (mismo orden que el maestro, con markdown de teoría antes de cada una
 - **Entregable:** tabla comparativa + conclusión de cuál conviene y por qué.
 
 ### Fase 4 — Exportar
+> **Decisión (2026-10-27, Kevin): el modelo elegido es ResNet18** (99.85% contra 99.07% de la CNN propia, ver el notebook 02). `models/config.json` apunta a ResNet18 (`"modelo": "resnet18"`, 224, normalización de ImageNet). `src/predecir.py` construye la arquitectura según `config["modelo"]`, así que también sirve para la CNN propia. `src/exportar.py` escribe el config, exporta `models/frutas_resnet18.onnx` y lo verifica. La app de la Fase 5 debe usar `src.predecir` en lugar de la plantilla 7.6, que está hecha para `Net`.
 - `models/config.json` (plantilla 7.4).
 - Exportar a ONNX el modelo elegido (plantilla 7.5) y **verificar** con `onnxruntime` que las salidas coinciden con PyTorch (`np.allclose(..., atol=1e-4)`).
 - `src/predecir.py`: `cargar_modelo()` y `predecir(img_pil) -> dict{clase: prob}` usando el config. **Mismos transforms que test.**
