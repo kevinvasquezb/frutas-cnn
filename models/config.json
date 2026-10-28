@@ -1,7 +1,7 @@
 {
   "modelo": "resnet18",
-  "pesos": "frutas_resnet18.pth",
-  "onnx": "frutas_resnet18.onnx",
+  "pesos": "frutas_resnet18_propias.pth",
+  "onnx": "frutas_resnet18_propias.onnx",
   "img_size": 224,
   "mean": [
     0.485,
@@ -17,6 +17,7 @@
     "freshapples",
     "freshbanana",
     "freshoranges",
+    "nada",
     "rottenapples",
     "rottenbanana",
     "rottenoranges"
@@ -25,6 +26,7 @@
     "freshapples": "Manzana fresca",
     "freshbanana": "Banana fresca",
     "freshoranges": "Naranja fresca",
+    "nada": "Sin fruta",
     "rottenapples": "Manzana podrida",
     "rottenbanana": "Banana podrida",
     "rottenoranges": "Naranja podrida"

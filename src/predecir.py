@@ -75,7 +75,10 @@ if __name__ == "__main__":
     for ruta in sys.argv[1:]:
         probs = predecir(Image.open(ruta))
         top = next(iter(probs))  # La clase con mayor probabilidad
-        veredicto = "DESCARTAR (podrida)" if top.startswith("rotten") else "APTA PARA VENTA"
+        if top == "nada":
+            veredicto = "NO SE DETECTA FRUTA"
+        else:
+            veredicto = "DESCARTAR (podrida)" if top.startswith("rotten") else "APTA PARA VENTA"
         print(f"\n{Path(ruta).name}  ->  {nombres[top]} ({probs[top]:.1%})  =>  {veredicto}")
         for clase, p in list(probs.items())[:3]:  # Top 3
             print(f"   {nombres[clase]:<16} {p:6.1%}")

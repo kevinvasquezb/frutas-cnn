@@ -10,3 +10,4 @@ onnx
 onnxscript
 onnxruntime
 gradio
+opencv-python

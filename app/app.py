@@ -25,6 +25,8 @@ def analizar(img):
     top, conf = next(iter(probs.items()))  # Clase más probable y su probabilidad
     resultado = {nombres[c]: p for c, p in probs.items()}  # Con nombres en español para mostrar
 
+    if top == "nada":  # Clase "sin fruta" (existe si el modelo se reentrenó con fotos propias, notebook 03)
+        return resultado, "# 🔍 No se detecta fruta\nPon una manzana, banana o naranja frente a la cámara."
     if top.startswith("rotten"):
         veredicto = f"# ❌ Descartar (podrida)\n**{nombres[top]}** con {conf:.1%} de confianza."
     else:

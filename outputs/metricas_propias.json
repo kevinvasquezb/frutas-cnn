@@ -1,0 +1,19 @@
+{
+  "modelo": "ResNet18 + fotos propias",
+  "clases": [
+    "freshapples",
+    "freshbanana",
+    "freshoranges",
+    "nada",
+    "rottenapples",
+    "rottenbanana",
+    "rottenoranges"
+  ],
+  "fotos_propias_train": 26,
+  "fotos_propias_test": 9,
+  "antes_propias_con_fruta": 0.6667,
+  "propias_todas": 1.0,
+  "propias_con_fruta": 1.0,
+  "kaggle_test": 0.9985,
+  "tiempo_entrenamiento_s": 91.7
+}
